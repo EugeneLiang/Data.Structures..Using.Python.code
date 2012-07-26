@@ -1,0 +1,12 @@
+As a second example, suppose you need to read the contents of a text le and
+count the number of letters occurring in the le with the results printed to the
+terminal. We know that characters are represented by the ASCII code, which
+consists of integer values. The letters of the alphabet, both upper- and lowercase,
+are part of what's known as the printable range of the ASCII code. This includes
+the ASCII values in the range [32: : :126] along with some of the codes with smaller
+values. The latter are known control characters and can include the tab, newline,
+and form-feed codes. Since all of the letters will have ASCII values less than 127,
+we can create an array of this size and let each element represent a counter for
+the corresponding ASCII value. After processing the le, we can traverse over the
+elements used as counters for the letters of the alphabet and ignore the others.
+The following program provides a solution to this problem using the Array ADT
